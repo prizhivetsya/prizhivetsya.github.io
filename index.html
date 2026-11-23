@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тренинги по управлению изменениями и Agile в Алматы и Астане — Приживётся</title>
+<link rel="canonical" href="https://prizhivetsya.github.io/">
+<meta name="robots" content="index, follow">
+<meta property="og:url" content="https://prizhivetsya.github.io/">
+<meta property="og:locale" content="ru_RU">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Приживётся",
+  "url": "https://prizhivetsya.github.io/",
+  "email": "prizhivetsya.channel@gmail.com",
+  "description": "Тренинги и воркшопы по управлению изменениями и Agile для руководителей, команд, учебных центров и бизнес-школ.",
+  "areaServed": ["Алматы", "Астана", "Казахстан"],
+  "sameAs": ["https://t.me/prizhivetsya", "https://stepik.org/course/301706", "https://stepik.org/course/301709"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Программы",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Course", "name": "Управление изменениями на практике", "description": "Тренинг на 1–2 дня: модели Левина, Коттера и Бриджеса, карта стейкхолдеров, работа с сопротивлением, закрепление результата.", "provider": {"@type": "Organization", "name": "Приживётся"}}},
+      {"@type": "Offer", "itemOffered": {"@type": "Course", "name": "Agile и Scrum для руководителей", "description": "Однодневный тренинг: Scrum без мифов, Kanban, роль руководителя в Agile-команде.", "provider": {"@type": "Organization", "name": "Приживётся"}}},
+      {"@type": "Offer", "itemOffered": {"@type": "Course", "name": "Сопротивление изменениям без давления", "description": "Воркшоп на 3 часа: сигналы и причины сопротивления, тактика под каждую причину.", "provider": {"@type": "Organization", "name": "Приживётся"}}},
+      {"@type": "Offer", "itemOffered": {"@type": "Course", "name": "Внедрить Agile так, чтобы прижился", "description": "Воркшоп на 3–4 часа: пилот и тиражирование Agile без отката.", "provider": {"@type": "Organization", "name": "Приживётся"}}}
+    ]
+  }
+}
+</script>
+<meta name="description" content="Тренинги и воркшопы по управлению изменениями и Agile для руководителей, команд, учебных центров и бизнес-школ. Алматы, Астана, онлайн.">
+<meta name="keywords" content="управление изменениями тренинг, Agile для руководителей, Scrum тренинг Алматы, тренинг управление изменениями Астана, сопротивление изменениям, корпоративное обучение Казахстан">
+<meta property="og:title" content="Приживётся — тренинги по управлению изменениями и Agile">
+<meta property="og:description" content="Чтобы новое не откатилось через три месяца. Тренинги, воркшопы и модули для бизнес-школ.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light dark;
+--bg:light-dark(#ffffff,#061615);
+--ink:light-dark(#0a1f1d,#eaf4f2);
+--soft:light-dark(#53706c,#a3bfbb);
+--tint:light-dark(#eef7f4,#0c2422);
+--card:light-dark(#ffffff,#0f2a28);
+--line:light-dark(#dcebe7,#1c3b38);
+--night:#04211f;--night2:#08332f;--teal:#13877e;--mint:#8fe0cf;
+--amber:#ffb23f;--amber-ink:light-dark(#9a5600,#ffc56b);--leaf:#7bd66f}
+:root[data-theme=light]{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Onest,system-ui,sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
+svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-weight:800;letter-spacing:-.035em;line-height:1.02;margin:0;text-wrap:balance}
+h2{font-size:clamp(34px,4.6vw,56px)}
+h3{font-size:22px;letter-spacing:-.02em;line-height:1.15}
+p{margin:0}
+.wrap{max-width:1240px;margin:0 auto}
+.band{padding-block:clamp(64px,8vw,120px);padding-left:max(5vw,16px,env(safe-area-inset-left,0px));padding-right:max(5vw,16px,env(safe-area-inset-right,0px))}
+.lead{font-size:19px;color:var(--soft);max-width:60ch}
+.head{display:grid;gap:18px;margin-bottom:48px}
+.head.split{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:end;gap:40px}
+.nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:20;width:min(1180px,calc(100% - 24px));display:flex;align-items:center;gap:16px;padding:8px 8px 8px 20px;border-radius:999px;background:rgba(4,33,31,.62);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border:1px solid rgba(255,255,255,.12);color:#fff}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-.02em;text-decoration:none;margin-right:auto}
+.logo svg{width:28px;height:28px}
+.links{display:flex;gap:2px;font-weight:500;font-size:15px}
+.links a{text-decoration:none;padding:9px 14px;border-radius:999px;color:#d9ece9}
+.links a:hover{background:rgba(255,255,255,.1);color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 16px/1 Onest,sans-serif;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px}
+.btn.amber{background:var(--amber);color:#241400;box-shadow:0 8px 30px -8px rgba(255,178,63,.7)}
+.btn.glass{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.22);color:#fff}
+.btn.dark{background:var(--night);color:#fff}
+.nav .btn{min-height:44px;padding:0 20px;font-size:15px}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:12px}
+.hero{position:relative;background:radial-gradient(1000px 520px at 78% 30%,rgba(255,178,63,.20),transparent 60%),radial-gradient(900px 600px at 10% 0%,rgba(19,135,126,.45),transparent 60%),var(--night);color:#fff;padding-top:clamp(120px,14vw,170px);padding-bottom:0;overflow:hidden}
+.hero .wrap{display:grid;gap:36px}
+.hero-top{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:40px;align-items:end}
+.chip{justify-self:start;display:inline-flex;align-items:center;gap:8px;padding:7px 14px 7px 8px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);font-size:14px;color:#d9ece9}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--leaf);box-shadow:0 0 0 4px rgba(123,214,111,.25)}
+.hero h1{font-size:clamp(46px,7.4vw,96px)}
+.hero-side{display:grid;gap:24px;padding-bottom:10px}
+.hero-side .lead{color:#c3dcd8;font-size:18px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.stage{position:relative}
+.scene{display:block;width:100%;height:auto}
+.stats{position:absolute;left:0;bottom:clamp(20px,4vw,48px);display:flex;gap:10px;flex-wrap:wrap}
+.stat{padding:14px 18px;border-radius:18px;background:rgba(4,33,31,.55);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.14)}
+.stat b{display:block;font-size:28px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.stat span{font-size:14px;color:#bcd7d3;white-space:nowrap}
+.grow{transform-box:fill-box;transform-origin:50% 100%;animation:grow 1.6s cubic-bezier(.2,.9,.2,1) both}
+.g2{animation-delay:.2s}.g3{animation-delay:.4s}.g4{animation-delay:.6s}
+@keyframes grow{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+@media(prefers-reduced-motion:reduce){.grow{animation:none}.btn{transition:none}html{scroll-behavior:auto}}
+.vs{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+.side{border-radius:28px;padding:clamp(24px,3vw,40px);display:grid;gap:18px;align-content:start}
+.side.off{background:var(--tint)}
+.side.on{background:linear-gradient(160deg,var(--night2),var(--night));color:#fff}
+.side h3{font-size:26px}
+.side ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.side li{display:grid;grid-template-columns:26px minmax(0,1fr);gap:12px;align-items:start}
+.side li svg{width:22px;height:22px;margin-top:3px}
+.side.off li{color:var(--soft)}
+.side.on li{color:#d4eae6}
+.label{font-size:14px;font-weight:600;color:var(--soft)}
+.side.on .label{color:var(--mint)}
+.programs{background:var(--tint)}
+.bento{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:auto auto;gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:clamp(24px,2.6vw,34px);display:grid;gap:16px;align-content:start;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(4,33,31,.45)}
+.card.hero-card{grid-row:span 2;background:radial-gradient(600px 400px at 100% 0%,rgba(255,178,63,.22),transparent 60%),linear-gradient(170deg,var(--night2),var(--night));color:#fff;border-color:transparent}
+.card.hero-card h3{font-size:clamp(28px,3vw,38px)}
+.card.hero-card .meta dd,.card.hero-card li{color:#cfe5e1}
+.card.wide{grid-column:span 2}
+.pill{justify-self:start;font-size:14px;font-weight:600;padding:6px 12px;border-radius:999px;background:color-mix(in srgb,var(--teal) 14%,transparent);color:light-dark(#0d6b63,var(--mint));white-space:nowrap}
+.hero-card .pill{background:var(--amber);color:#241400}
+.card ul{margin:0;padding:0;list-style:none;display:grid;gap:9px;color:var(--soft);font-size:16px}
+.card li{padding-left:22px;position:relative}
+.card li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:2px;border-radius:2px;background:var(--teal)}
+.hero-card li::before{background:var(--amber)}
+.meta{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 16px;font-size:15px;margin:0;padding-top:16px;border-top:1px solid var(--line)}
+.hero-card .meta{border-color:rgba(255,255,255,.16)}
+.meta dt{font-weight:600}
+.meta dd{margin:0;color:var(--soft)}
+.modules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:4px}
+.modules div{padding:14px;border-radius:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);font-size:15px;color:#d4eae6}
+.modules b{display:block;color:#fff;font-size:16px;margin-bottom:2px}
+.scale{display:grid;gap:14px}
+.fmt{display:grid;grid-template-columns:minmax(150px,220px) minmax(0,1fr) minmax(0,1.3fr);gap:24px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}
+.fmt b{font-size:clamp(26px,3vw,34px);font-weight:800;letter-spacing:-.03em;white-space:nowrap}
+.track{height:14px;border-radius:999px;background:var(--tint);overflow:hidden}
+.track i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--teal),var(--mint))}
+.fmt p{color:var(--soft);font-size:16px}
+.fmt h3{font-size:19px;margin-bottom:2px}
+.who{background:var(--night);color:#fff;border-radius:0}
+.who .lead{color:#bcd7d3}
+.aud{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.aud div{padding:28px;border-radius:26px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);display:grid;gap:10px;align-content:start}
+.aud svg{width:44px;height:44px}
+.aud span{color:#bcd7d3;font-size:16px}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin:0;padding:0;list-style:none;position:relative}
+.steps::before{content:"";position:absolute;left:28px;right:28px;top:28px;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 8px,transparent 8px 14px)}
+.steps li{position:relative;display:grid;gap:10px;align-content:start}
+.num{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;background:var(--night);color:#fff;font-size:22px;font-weight:800;box-shadow:0 0 0 8px var(--bg)}
+.steps li:last-child .num{background:var(--amber);color:#241400}
+.steps p{color:var(--soft);font-size:16px}
+.author .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:56px;align-items:center}
+.portrait{aspect-ratio:4/5;border-radius:36px;background:radial-gradient(400px 300px at 70% 20%,rgba(255,178,63,.35),transparent 60%),linear-gradient(170deg,var(--teal),var(--night));display:grid;place-items:end center;overflow:hidden;max-width:440px}
+.portrait svg{width:100%;height:auto}
+.author .txt{display:grid;gap:20px}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.facts div{padding:18px 20px;border-radius:20px;background:var(--tint);font-size:16px;color:var(--soft)}
+.facts b{display:block;color:var(--ink);font-size:17px;margin-bottom:4px}
+.materials{background:var(--tint)}
+.mats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.mat{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:26px;display:grid;grid-template-rows:auto 1fr auto;gap:12px;text-decoration:none;transition:transform .25s,border-color .25s}
+.mat:hover{transform:translateY(-4px);border-color:var(--teal)}
+.mat p{color:var(--soft);font-size:16px}
+.go{display:flex;align-items:center;justify-content:space-between;font-weight:600;color:var(--amber-ink)}
+.go svg{width:36px;height:36px;padding:9px;border-radius:50%;background:var(--tint)}
+.price{font-size:14px;font-weight:600;color:var(--ink);background:color-mix(in srgb,var(--amber) 25%,transparent);padding:4px 10px;border-radius:999px;justify-self:start;white-space:nowrap}
+.faqgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px 20px;align-items:start}
+details{border-radius:20px;background:var(--tint);padding:0 22px}
+summary{cursor:pointer;list-style:none;padding:20px 36px 20px 0;font-weight:700;font-size:18px;letter-spacing:-.01em;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:0;top:50%;width:12px;height:12px;border-right:2px solid var(--teal);border-bottom:2px solid var(--teal);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+details p{padding:0 0 20px;color:var(--soft);font-size:16px}
+.contact{padding-top:0}
+.final{position:relative;overflow:hidden;border-radius:40px;padding:clamp(36px,6vw,80px);background:radial-gradient(700px 400px at 90% 10%,rgba(255,178,63,.35),transparent 60%),radial-gradient(700px 500px at 0% 100%,rgba(19,135,126,.55),transparent 60%),var(--night);color:#fff;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:start}
+.final .lead{color:#c3dcd8}
+.final .txt{display:grid;gap:22px}
+.contacts{display:grid;gap:12px}
+.contacts div{display:grid;gap:2px;padding:16px 20px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14)}
+.contacts span{font-size:14px;color:var(--mint)}
+.contacts a{font-weight:600;font-size:18px;text-decoration:none;overflow-wrap:anywhere}
+.form{background:#fff;color:#0a1f1d;border-radius:28px;padding:clamp(22px,3vw,32px);display:grid;gap:14px}
+.form .two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.form label{display:grid;gap:6px;font-size:14px;font-weight:600;color:#3d5a56}
+.form input,.form select,.form textarea{font:16px/1.4 Onest,sans-serif;color:#0a1f1d;background:#f3f9f7;border:1px solid #d3e6e1;border-radius:14px;padding:12px 14px;min-height:48px;width:100%}
+.form textarea{resize:vertical}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:#13877e;box-shadow:0 0 0 4px rgba(19,135,126,.18);background:#fff}
+.form .bad{border-color:#d9483b}
+.form .btn{justify-self:start;border:0}
+.form .btn[disabled]{opacity:.6;cursor:wait;transform:none}
+.status{font-size:15px;min-height:1.2em}
+.status.ok{color:#0d6b63;font-weight:600}
+.status.err{color:#b23a2e}
+.status a{color:inherit}
+footer{padding:28px max(5vw,16px) 40px;color:var(--soft);font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between}
+@media(max-width:1000px){
+.links{display:none}
+.hero-top,.head.split,.author .wrap,.final{grid-template-columns:minmax(0,1fr)}
+.bento{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card.hero-card{grid-row:auto;grid-column:span 2}
+.card.wide{grid-column:span 2}
+.aud,.mats{grid-template-columns:repeat(2,minmax(0,1fr))}
+.steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:32px}
+.steps::before{display:none}
+.portrait{max-width:320px}}
+@media(max-width:640px){
+body{font-size:16px}
+.nav{padding-left:16px}
+.nav .btn{padding:0 16px}
+.stats{position:static;margin:-8px 0 24px}
+.vs,.bento,.aud,.mats,.faqgrid,.facts,.steps,.modules{grid-template-columns:minmax(0,1fr)}
+.card.hero-card,.card.wide{grid-column:auto}
+.fmt{grid-template-columns:minmax(0,1fr);gap:10px}
+.form .two{grid-template-columns:minmax(0,1fr)}
+.form .btn{justify-self:stretch}
+.cta .btn{flex:1 1 100%}
+.final{border-radius:28px}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Основное меню">
+  <a class="logo" href="#top">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#13877e"/><path d="M16 25V14" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><path d="M16 16c-5 0-8-3-8-8 5 0 8 3 8 8z" fill="#7bd66f"/><path d="M16 14c0-5 3-7 8-7 0 5-3 7-8 7z" fill="#ffb23f"/></svg>
+    Приживётся
+  </a>
+  <div class="links">
+    <a href="#programs">Программы</a>
+    <a href="#formats">Форматы</a>
+    <a href="#author">Об авторе</a>
+    <a href="#materials">Материалы</a>
+    <a href="#faq">Вопросы</a>
+  </div>
+  <a class="btn amber" href="#contact">Оставить заявку</a>
+</nav>
+
+<header class="band hero" id="top">
+  <div class="wrap">
+    <div class="hero-top">
+      <div style="display:grid;gap:24px">
+        <span class="chip"><i></i>Тренинги по управлению изменениями и Agile</span>
+        <h1>Перемены, которые приживаются</h1>
+      </div>
+      <div class="hero-side">
+        <p class="lead">Учу руководителей и команды внедрять новое так, чтобы оно работало и через полгода, а не только в день запуска.</p>
+        <div class="cta">
+          <a class="btn amber" href="#contact">Обсудить тренинг
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn glass" href="#programs">Программы</a>
+        </div>
+      </div>
+    </div>
+    <div class="stage">
+      <svg class="scene" id="scene" viewBox="0 0 1240 460" role="img" aria-label="Росток растёт по ступеням: понять, захотеть, научиться, закрепить">
+        <defs>
+          <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffb23f" stop-opacity=".9"/><stop offset=".35" stop-color="#ffb23f" stop-opacity=".35"/><stop offset="1" stop-color="#ffb23f" stop-opacity="0"/></radialGradient>
+          <linearGradient id="top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c8f3e8"/><stop offset="1" stop-color="#8fe0cf"/></linearGradient>
+          <linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a9a8f" stop-opacity=".95"/><stop offset="1" stop-color="#0a4440" stop-opacity=".2"/></linearGradient>
+          <linearGradient id="stem" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#3a9a4a"/><stop offset="1" stop-color="#7bd66f"/></linearGradient>
+          <g id="lfL"><path d="M0 0C-20 0-34-12-36-32-16-32-2-20 0 0z" fill="#7bd66f"/><path d="M0 0C-14-6-24-16-31-28" stroke="#2f8a40" stroke-width="2" fill="none"/></g>
+          <g id="lfR"><path d="M0 0C20 0 34-12 36-32 16-32 2-20 0 0z" fill="#a4e88f"/><path d="M0 0C14-6 24-16 31-28" stroke="#2f8a40" stroke-width="2" fill="none"/></g>
+        </defs>
+        <circle cx="1010" cy="120" r="230" fill="url(#glow)"/>
+        <circle cx="1010" cy="120" r="64" fill="#ffc560"/>
+        <g id="dots"></g>
+        <g id="stairs"></g>
+        <g id="plants"></g>
+        <g id="labels" font-family="Onest, sans-serif" font-weight="700" font-size="20" fill="#04211f"></g>
+      </svg>
+      <div class="stats">
+        <div class="stat"><b>4</b><span>готовые программы</span></div>
+        <div class="stat"><b>RU · EN</b><span>язык обучения</span></div>
+        <div class="stat"><b>3 ч – 3 дня</b><span>длительность</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="band" aria-labelledby="pr">
+  <div class="wrap">
+    <div class="head split">
+      <h2 id="pr">Систему запустили, а работают по-старому</h2>
+      <p class="lead">Сроки соблюдены, акт подписан. А через три месяца люди снова в таблицах. Почти всегда причина одна: внедряли систему, а не изменение.</p>
+    </div>
+    <div class="vs">
+      <div class="side off">
+        <span class="label">Запустили</span>
+        <h3>Как обычно бывает</h3>
+        <ul id="offList"></ul>
+      </div>
+      <div class="side on">
+        <span class="label">Прижилось</span>
+        <h3>Что даёт тренинг</h3>
+        <ul id="onList"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band programs" id="programs" aria-labelledby="pg">
+  <div class="wrap">
+    <div class="head split">
+      <h2 id="pg">Программы</h2>
+      <p class="lead">Реальные кейсы, работа в группах и шаблоны, которые участники заполняют по своему изменению прямо на тренинге.</p>
+    </div>
+    <div class="bento">
+      <article class="card hero-card">
+        <span class="pill">Флагман · 1–2 дня</span>
+        <h3>Управление изменениями на практике</h3>
+        <p style="color:#cfe5e1">Полный путь изменения: от диагностики до закрепления результата.</p>
+        <div class="modules">
+          <div><b>Основы</b>почему проваливаются, модели, диагностика</div>
+          <div><b>Люди</b>стейкхолдеры, сопротивление, спонсоры</div>
+          <div><b>Инструменты</b>коммуникации, обучение, закрепление</div>
+        </div>
+        <ul>
+          <li>Модели Левина, Коттера и Бриджеса: когда какую применять</li>
+          <li>Карта стейкхолдеров и матрица «влияние – интерес»</li>
+          <li>Метрики принятия и 4 механизма закрепления</li>
+        </ul>
+        <dl class="meta"><dt>Для кого</dt><dd>руководители проектов и подразделений, HR, PMO</dd><dt>Итог</dt><dd>план внедрения своего изменения</dd></dl>
+      </article>
+      <article class="card">
+        <span class="pill">1 день</span>
+        <h3>Agile и Scrum для руководителей</h3>
+        <ul>
+          <li>Когда Agile нужен, а когда нет</li>
+          <li>Scrum без мифов: роли, события, артефакты</li>
+          <li>Kanban и роль руководителя</li>
+        </ul>
+        <dl class="meta"><dt>Итог</dt><dd>схема работы с Agile-командой</dd></dl>
+      </article>
+      <article class="card">
+        <span class="pill">Воркшоп · 3 часа</span>
+        <h3>Сопротивление без давления</h3>
+        <ul>
+          <li>Открытые и скрытые сигналы</li>
+          <li>Пять причин и тактика под каждую</li>
+          <li>Разговор со скептиком</li>
+        </ul>
+        <dl class="meta"><dt>Итог</dt><dd>карта сопротивления команды</dd></dl>
+      </article>
+      <article class="card wide">
+        <span class="pill">Воркшоп · 3–4 часа</span>
+        <h3>Внедрить Agile так, чтобы прижился</h3>
+        <ul>
+          <li>Почему «у нас Scrum» часто остаётся на бумаге, и что с этим делать</li>
+          <li>Пилот и тиражирование без отката, ретроспектива как инструмент закрепления</li>
+        </ul>
+        <dl class="meta"><dt>Для кого</dt><dd>компании в начале или в середине Agile-трансформации</dd><dt>Итог</dt><dd>дорожная карта перехода</dd></dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="formats" aria-labelledby="fm">
+  <div class="wrap">
+    <div class="head split">
+      <h2 id="fm">Форматы</h2>
+      <p class="lead">От короткой встречи для руководителей до модуля в программе MBA. Офлайн в Алматы и Астане или онлайн.</p>
+    </div>
+    <div class="scale" id="scale"></div>
+  </div>
+</section>
+
+<section class="band who" aria-labelledby="wh">
+  <div class="wrap">
+    <div class="head split">
+      <h2 id="wh">С кем работаю</h2>
+      <p class="lead">Управления изменениями почти нет в программах учебных центров. Им можно дополнить ваш Agile- или проектный курс или провести как отдельный тренинг.</p>
+    </div>
+    <div class="aud">
+      <div>
+        <svg viewBox="0 0 44 44" fill="none" stroke="#8fe0cf" stroke-width="2.2" stroke-linejoin="round"><rect x="6" y="12" width="20" height="26" rx="3"/><rect x="26" y="20" width="12" height="18" rx="2"/><path d="M12 19h8M12 25h8M12 31h8" stroke-linecap="round"/></svg>
+        <h3>Компании</h3><span>Корпоративные тренинги под конкретное внедрение: новая система, процесс, реорганизация.</span>
+      </div>
+      <div>
+        <svg viewBox="0 0 44 44" fill="none" stroke="#8fe0cf" stroke-width="2.2" stroke-linejoin="round"><rect x="6" y="9" width="32" height="22" rx="3"/><path d="M15 37h14M22 31v6" stroke-linecap="round"/><path d="M13 21l5-5 5 4 8-7" stroke="#ffb23f" stroke-linecap="round"/></svg>
+        <h3>Учебные центры</h3><span>Готовые программы с методичкой, кейсами и раздаточными шаблонами.</span>
+      </div>
+      <div>
+        <svg viewBox="0 0 44 44" fill="none" stroke="#8fe0cf" stroke-width="2.2" stroke-linejoin="round"><path d="M4 17l18-8 18 8-18 8z"/><path d="M11 21v9c0 3 5 6 11 6s11-3 11-6v-9" stroke-linecap="round"/><path d="M40 17v10" stroke="#ffb23f" stroke-linecap="round"/></svg>
+        <h3>Бизнес-школы и вузы</h3><span>Модули по управлению изменениями и Agile для MBA и магистратуры.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="hw">
+  <div class="wrap">
+    <div class="head"><h2 id="hw">Как мы начнём</h2></div>
+    <ol class="steps">
+      <li><span class="num">1</span><h3>Заявка</h3><p>Оставьте заявку через форму ниже или напишите в Telegram.</p></li>
+      <li><span class="num">2</span><h3>Созвон 30 минут</h3><p>Разберём задачу, аудиторию и формат. Бесплатно.</p></li>
+      <li><span class="num">3</span><h3>Программа</h3><p>Пришлю программу и стоимость под ваш формат и число участников.</p></li>
+      <li><span class="num">4</span><h3>Тренинг и шаблоны</h3><p>Участники уходят с шаблонами и планом на первые 90 дней.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band author" id="author" aria-labelledby="au" style="padding-top:0">
+  <div class="wrap">
+    <div class="portrait" aria-hidden="true">
+      <svg viewBox="0 0 400 500"><g id="pStairs"></g><path d="M300 210V90" stroke="#7bd66f" stroke-width="6" stroke-linecap="round"/><use href="#lfL" transform="translate(300 170) scale(1.4)"/><use href="#lfR" transform="translate(300 130) scale(1.4)"/><circle cx="300" cy="80" r="18" fill="#ffb23f"/><circle cx="300" cy="80" r="8" fill="#ffe0a0"/></svg>
+    </div>
+    <div class="txt">
+      <h2 id="au">Об авторе</h2>
+      <p class="lead">Меня зовут Асель. Я сертифицированный специалист по управлению изменениями и много лет работаю с Agile-трансформацией и проектными офисами в крупных организациях Казахстана.</p>
+      <div class="facts">
+        <div><b>Сертификат</b>по управлению изменениями</div>
+        <div><b>Agile и PMO</b>практика трансформаций</div>
+        <div><b>Видеокурсы</b>на русском и английском</div>
+        <div><b>Местные кейсы</b>бизнес и госсектор Казахстана</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band materials" id="materials" aria-labelledby="mt">
+  <div class="wrap">
+    <div class="head split">
+      <h2 id="mt">Попробуйте бесплатно</h2>
+      <p class="lead">Перед заказом тренинга можно посмотреть, как я объясняю.</p>
+    </div>
+    <div class="mats" id="mats"></div>
+  </div>
+</section>
+
+<section class="band" id="faq" aria-labelledby="fq">
+  <div class="wrap">
+    <div class="head"><h2 id="fq">Частые вопросы</h2></div>
+    <div class="faqgrid" id="faqgrid"></div>
+  </div>
+</section>
+
+<section class="band contact" id="contact" aria-labelledby="ct">
+  <div class="wrap">
+    <div class="final">
+      <div class="txt">
+        <h2 id="ct">Оставьте заявку на тренинг</h2>
+        <p class="lead">Отвечу на почту, которую вы укажете, и предложу время для короткого созвона. Первый созвон бесплатный и ни к чему не обязывает.</p>
+        <div class="contacts">
+          <div><span>Email</span><a id="mailLink" href="#"></a></div>
+          <div><span>Telegram</span><a href="https://t.me/prizhivetsya">t.me/prizhivetsya</a></div>
+        </div>
+      </div>
+      <form class="form" id="lead" novalidate>
+        <div class="two">
+          <label>Организация *<input id="f-org" name="Организация" required autocomplete="organization" placeholder="Название компании или центра"></label>
+          <label>Ваше имя *<input id="f-name" name="Имя" required autocomplete="name"></label>
+        </div>
+        <div class="two">
+          <label>Email *<input id="f-email" name="email" type="email" required autocomplete="email"></label>
+          <label>Телефон или Telegram<input id="f-phone" name="Телефон" autocomplete="tel"></label>
+        </div>
+        <div class="two">
+          <label>Программа<select id="f-prog" name="Программа"><option>Управление изменениями на практике</option><option>Agile и Scrum для руководителей</option><option>Сопротивление без давления</option><option>Внедрить Agile так, чтобы прижился</option><option>Нужна программа под задачу</option></select></label>
+          <label>Формат<select id="f-fmt" name="Формат"><option>Пока не знаю</option><option>Воркшоп, 3 часа</option><option>Тренинг, 1 день</option><option>Модуль, 2–3 дня</option><option>Онлайн</option></select></label>
+        </div>
+        <div class="two">
+          <label>Участников<input id="f-count" name="Участников" inputmode="numeric" placeholder="например, 15"></label>
+          <label>Желаемые даты<input id="f-dates" name="Даты" placeholder="например, февраль 2027"></label>
+        </div>
+        <label>Что вы внедряете или какой курс собираете<textarea id="f-msg" name="Сообщение" rows="3"></textarea></label>
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <button class="btn amber" id="f-send" type="submit">Отправить заявку</button>
+        <p class="status" id="f-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Приживётся · тренинги по управлению изменениями и Agile</span>
+    <span>Алматы · Астана · онлайн · <a href="mailto:prizhivetsya.channel@gmail.com">prizhivetsya.channel@gmail.com</a> · <a href="https://t.me/prizhivetsya">t.me/prizhivetsya</a></span>
+  </div>
+</footer>
+
+<script>
+{
+  const EMAIL='prizhivetsya.channel@gmail.com';
+  const ml=document.getElementById('mailLink');
+  ml.textContent=EMAIL;ml.href='mailto:'+EMAIL;
+
+  const form=document.getElementById('lead'),st=document.getElementById('f-status'),btn=document.getElementById('f-send');
+  const req=['f-org','f-name','f-email'];
+  form.addEventListener('submit',async e=>{
+    e.preventDefault();
+    let bad=false;
+    req.forEach(id=>{const el=document.getElementById(id);const v=el.value.trim();const no=!v||(el.type==='email'&&!/^\S+@\S+\.\S+$/.test(v));el.classList.toggle('bad',no);if(no)bad=true});
+    if(bad){st.className='status err';st.textContent='Заполните организацию, имя и корректный email.';return}
+    const data=Object.fromEntries(new FormData(form).entries());
+    if(data._honey)return;
+    delete data._honey;
+    data._subject='Заявка на тренинг: '+data['Организация'];
+    data._template='table';
+    btn.disabled=true;st.className='status';st.textContent='Отправляем…';
+    try{
+      const r=await fetch('https://formsubmit.co/ajax/'+EMAIL,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)});
+      if(!r.ok)throw new Error(r.status);
+      form.reset();
+      st.className='status ok';st.textContent='Спасибо! Заявка отправлена, я отвечу на ваш email в течение рабочего дня.';
+    }catch(err){
+      st.className='status err';
+      st.innerHTML='Не получилось отправить форму. Напишите, пожалуйста, на <a href="mailto:'+EMAIL+'">'+EMAIL+'</a> или в <a href="https://t.me/prizhivetsya">Telegram</a>.';
+    }finally{btn.disabled=false}
+  });
+
+  const x='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 7l10 10M17 7L7 17"/></svg>';
+  const ok='<svg viewBox="0 0 24 24" fill="none" stroke="#ffb23f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
+  const arrow='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>';
+  const off=['Данные вносят «для галочки» в конце дня','Scrum есть, а цели спринтов срываются','Пилот прошёл блестяще, тираж забуксовал','Руководство сказало «это важно» один раз','Сопротивление продавливают, а не понимают'];
+  const on=['Видно, где застряло изменение и у какой группы','Понятно, что сказать скептикам до объявления','Спонсоры и агенты изменений знают свою роль','Есть план на первые 90 дней после запуска','Результат измеряется принятием, а не актом'];
+  document.getElementById('offList').innerHTML=off.map(t=>'<li>'+x+'<span>'+t+'</span></li>').join('');
+  document.getElementById('onList').innerHTML=on.map(t=>'<li>'+ok+'<span>'+t+'</span></li>').join('');
+
+  const fmts=[['3 часа','Воркшоп','Одна тема, разбор вашего кейса, готовый шаблон на выходе.',14],['1 день','Тренинг','Полная программа с практикой в группах.',36],['2–3 дня','Модуль','Для бизнес-школ, MBA и программ повышения квалификации.',100],['Онлайн','Zoom или Teams','Те же программы вживую, блоками по 2 часа.',28]];
+  document.getElementById('scale').innerHTML=fmts.map(f=>'<div class="fmt"><b>'+f[0]+'</b><div class="track"><i style="width:'+f[3]+'%"></i></div><div><h3>'+f[1]+'</h3><p>'+f[2]+'</p></div></div>').join('');
+
+  const mats=[['https://t.me/prizhivetsya','Telegram-канал','Кейсы, шаблоны и разборы три раза в неделю.','Подписаться',''],['https://stepik.org/course/301706','Почему изменения проваливаются','Бесплатный мини-курс на Stepik, 3 урока.','Открыть курс',''],['https://stepik.org/course/301709','Agile и Scrum за 3 урока','Бесплатный мини-курс на Stepik.','Открыть курс',''],['https://t.me/prizhivetsya','Набор руководителя изменений','5 шаблонов и маршрут на 6 недель, PDF.','Купить','4 990 ₸']];
+  document.getElementById('mats').innerHTML=mats.map(m=>'<a class="mat" href="'+m[0]+'"><h3>'+m[1]+'</h3><div style="display:grid;gap:10px;align-content:start"><p>'+m[2]+'</p>'+(m[4]?'<span class="price">'+m[4]+'</span>':'')+'</div><span class="go">'+m[3]+arrow+'</span></a>').join('');
+
+  const faq=[['Подойдёт, если мы внедряем не IT-систему?','Да. Люди сопротивляются одинаково, меняется только предмет. Инструменты работают для CRM, нового регламента, Scrum или слияния отделов.'],['Можно адаптировать под нашу отрасль?','Да. Перед тренингом созваниваемся, и кейсы подбираются под вашу ситуацию: банк, госсектор, производство, ритейл.'],['На каком языке проходит обучение?','На русском или английском. Материалы и шаблоны есть на обоих языках.'],['Сколько стоит тренинг?','Зависит от формата, длительности и числа участников. Точную стоимость назову после короткого созвона.'],['Где проходят тренинги офлайн?','В Алматы и Астане. Для других городов и зарубежных групп — онлайн.'],['Что участники получают после?','Заполненные шаблоны по своему изменению и памятку на первые 90 дней.']];
+  document.getElementById('faqgrid').innerHTML=faq.map(f=>'<details><summary>'+f[0]+'</summary><p>'+f[1]+'</p></details>').join('');
+
+  const steps=[{x:70,y:360,label:'Понять'},{x:330,y:290,label:'Захотеть'},{x:590,y:220,label:'Научиться'},{x:850,y:150,label:'Закрепить'}];
+  const W=260,B=460,SW=W-14;
+  let s=7;const rnd=()=>(s=s*16807%2147483647)/2147483647;
+  let dots='';for(let i=0;i<60;i++){dots+='<circle cx="'+(rnd()*1240).toFixed(0)+'" cy="'+(rnd()*300).toFixed(0)+'" r="'+(rnd()*1.8+.4).toFixed(1)+'" fill="#8fe0cf" opacity="'+(rnd()*.5+.1).toFixed(2)+'"/>'}
+  document.getElementById('dots').innerHTML=dots;
+  document.getElementById('stairs').innerHTML=steps.map(st=>
+    '<rect x="'+st.x+'" y="'+(st.y+10)+'" width="'+SW+'" height="'+(B-st.y)+'" rx="22" fill="url(#face)"/>'+
+    '<rect x="'+st.x+'" y="'+st.y+'" width="'+SW+'" height="30" rx="15" fill="url(#top)"/>'+
+    '<rect x="'+(st.x+14)+'" y="'+(st.y+6)+'" width="'+(W-60)+'" height="4" rx="2" fill="#fff" opacity=".6"/>'
+  ).join('');
+  document.getElementById('plants').innerHTML=steps.map((st,i)=>{
+    const cx=st.x+SW/2,h=36+i*40,sc=.55+i*.25,t=st.y-h;
+    const fl=i===3?'<circle cx="'+cx+'" cy="'+(t-10)+'" r="16" fill="#ffb23f"/><circle cx="'+cx+'" cy="'+(t-10)+'" r="7" fill="#ffe0a0"/>':'';
+    return '<g class="grow g'+(i+1)+'"><ellipse cx="'+cx+'" cy="'+(st.y+4)+'" rx="'+(22+i*6)+'" ry="5" fill="#04211f" opacity=".25"/>'+
+      '<path d="M'+cx+' '+(st.y+2)+'V'+t+'" stroke="url(#stem)" stroke-width="'+(4+i*1.5)+'" stroke-linecap="round"/>'+
+      '<use href="#lfL" transform="translate('+cx+' '+(st.y-h*.4)+') scale('+sc+')"/>'+
+      '<use href="#lfR" transform="translate('+cx+' '+(st.y-h*.75)+') scale('+sc+')"/>'+fl+'</g>';
+  }).join('');
+  document.getElementById('labels').innerHTML=steps.map(st=>'<text x="'+(st.x+SW/2)+'" y="'+(st.y+64)+'" text-anchor="middle" fill="#e6f6f2">'+st.label+'</text>').join('');
+
+  document.getElementById('pStairs').innerHTML=[[40,380],[130,320],[220,260]].map(q=>'<rect x="'+q[0]+'" y="'+q[1]+'" width="120" height="'+(520-q[1])+'" rx="16" fill="#8fe0cf" opacity=".22"/><rect x="'+q[0]+'" y="'+q[1]+'" width="120" height="18" rx="9" fill="#c8f3e8" opacity=".9"/>').join('')+'<rect x="240" y="210" width="120" height="310" rx="16" fill="#8fe0cf" opacity=".3"/><rect x="240" y="210" width="120" height="18" rx="9" fill="#c8f3e8"/>';
+}
+</script>
+</body>
+</html>
