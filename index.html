@@ -452,7 +452,7 @@ body{font-size:16px}
       </div>
       <form class="form" id="lead" novalidate>
         <div class="two">
-          <label>Организация *<input id="f-org" name="Организация" required autocomplete="organization" placeholder="Название компании или центра"></label>
+          <label>Организация *<input id="f-org" name="Организация" required autocomplete="organization" placeholder="Компания или учебный центр"></label>
           <label>Ваше имя *<input id="f-name" name="Имя" required autocomplete="name"></label>
         </div>
         <div class="two">
@@ -544,7 +544,7 @@ body{font-size:16px}
     const cx=st.x+SW/2,h=36+i*40,sc=.55+i*.25,t=st.y-h;
     const fl=i===3?'<circle cx="'+cx+'" cy="'+(t-10)+'" r="16" fill="#ffb23f"/><circle cx="'+cx+'" cy="'+(t-10)+'" r="7" fill="#ffe0a0"/>':'';
     return '<g class="grow g'+(i+1)+'"><ellipse cx="'+cx+'" cy="'+(st.y+4)+'" rx="'+(22+i*6)+'" ry="5" fill="#04211f" opacity=".25"/>'+
-      '<path d="M'+cx+' '+(st.y+2)+'V'+t+'" stroke="url(#stem)" stroke-width="'+(4+i*1.5)+'" stroke-linecap="round"/>'+
+      '<path d="M'+cx+' '+(st.y+2)+'V'+t+'" stroke="#4fae55" stroke-width="'+(4+i*1.5)+'" stroke-linecap="round"/>'+
       '<use href="#lfL" transform="translate('+cx+' '+(st.y-h*.4)+') scale('+sc+')"/>'+
       '<use href="#lfR" transform="translate('+cx+' '+(st.y-h*.75)+') scale('+sc+')"/>'+fl+'</g>';
   }).join('');
